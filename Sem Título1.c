@@ -2,44 +2,37 @@
 #include <stdlib.h>
 #include <locale.h>
 
-int main() {
-	setlocale(LC_ALL,"");
+int main(){
+	setlocale(LC_ALL,"portuguese");	
 	
-	float valor, desconto,;
+	//char nome[200];
+	float maca = 1.30;
+	float custoTotal;
+	int macaCompradas;
+	float desconto;
+		
 	
-	printf("Digite o nome do aluno: ");
-	scanf("%f",&nome);
+	printf("=== Venda de Maçãs === \n");
+	printf("Digite quantas maçãs deseja: \n");
+	scanf("%i",&macaCompradas);
 	
-	printf("Digite a Idade: ")
-	scanf("%f",&idade);
+	system("cls || clear ");
 	
-	printf("Digite a primeira nota: ")
-	scanf("%f",&primeiraNota);
+	if (macaCompradas <= 12){
+		custoTotal = maca * macaCompradas;
+		desconto = 1.30;
+		
+	} else {
+		custoTotal = 1.00 * macaCompradas;
+		desconto = 1.00;
+	}
 	
-	printf("Digite a segunta nota: ")
-	scanf("%f",&segundaNota);
-	
-	printf("Digite a terceira nota: ")
-	scanf("%f",&terceiraNota)
-	
-	desconto = valor * 0.10;
-	valor = valor - desconto;
-	
-	system("cls || clear"); //limpa o terminal no windows e linux
-	
+	printf("Numero de Maçãs compradas: %i \n",macaCompradas);
+	printf("Valor a para cada Maçã: %.2f. \n",desconto);
+	printf("Custo total: %.2f. \n",custoTotal);
 	
 	
-	printf("\n=== exibindo resultados ===\n");
-	printf("Desconto: R$ %.2f \n", desconto);
-	printf("valor com desconto: %.1f \n", valor);
-
 	
 	return 0;
 	
 }
-
-
-
- 
- 
- 
