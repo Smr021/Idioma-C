@@ -53,12 +53,17 @@ int main(){
 		
 	} 
 	
+	
+	printf("==== Exibindo os Resultados ====\n");
 	printf("Nome do Aluno: %s \n",nome);
+	printf("Primeira Nota: %.2f. \n",primeiraNota);
+	printf("Segunda Nota: %.2f. \n",segundaNota);
+	printf("Media: %.2f. \n",media);
 	printf("Conceito: %c. \n",conceito);
-	printf("Situação: %s. \n",situacao);
+	printf("SituaÃ§Ã£o: %s. \n",situacao);
 	
 	
-	
+	system("pause");
 	return 0;
 	
 }
