@@ -7,7 +7,7 @@
 int main (){
 	setlocale(LC_ALL,""); 
 	
-	//Declarando vareáveis
+	//Declarando vareÃ¡veis
 	char continuar;
 	int i, nota, soma = 0;
 	float media;
@@ -15,20 +15,17 @@ int main (){
 	
 	//Calculando dados
 	do{
-	
-do {
 	soma = 0;
 
 	for (i=1; i<=2; i++){
-		
-	printf("Digite uma nota: ");
-	scanf("%d",&nota);
-	soma += nota;
-	} 
-	
-	
-} while (nota < 0 || nota > 10);
+		do {
+			printf("Digite a %dÂª nota: ",i);
+			scanf("%d",&nota);
+		} while (nota < 0 || nota > 10);			
+	  soma += nota;
+	}	
 	media = soma /2;
+	
 	
 	//Exibindo dados
 	printf("Media: %.1f\n", media);
@@ -37,7 +34,7 @@ do {
 
 	system("cls || clear"); // -> limpar a tela
 	
-} while (continuar == 's'); // -> voltar a nova interação
+} while (continuar == 's'); // -> voltar a nova interaÃ§Ã£o
 	
 	return 0;	
 }
